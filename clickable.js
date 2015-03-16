@@ -4,7 +4,7 @@ var replaceTextWithLinks = function (element) {
 	}
 
 	var text = element.textContent;
-	var textWithLinks = text.replace(/<([^<>]*)>/g, '&lt;<a href="$1">$1</a>&gt;');
+	var textWithLinks = text.replace(/<([^<>]*)>/g, '&lt;<a href="$1" target="_blank">$1</a>&gt;');
 	element.innerHTML = textWithLinks;
 	element.classList.add('linkified');
 };
