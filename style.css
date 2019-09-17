@@ -1,0 +1,8 @@
+.linkified a {
+	color: #4E92E1 !important;
+	text-decoration: underline !important;
+}
+.linkified a:hover {
+	color: #3B81D1 !important;
+	text-decoration: none !important;
+}

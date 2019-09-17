@@ -9,12 +9,14 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://papertrailapp.com/*"],
+			"matches": ["https://*.papertrailapp.com/*"],
 			"run_at": "document_start",
-			"js": ["clickable.js"]
+			"js": ["clickable.js"],
+			"css": ["style.css"]
 		}
 	],
 	"permissions": [
-		"https://papertrailapp.com/"
+		"https://papertrailapp.com/",
+		"https://my.papertrailapp.com/"
 	]
 }
